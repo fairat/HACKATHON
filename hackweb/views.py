@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import os
+
+from datetime import datetime
 from django.http import JsonResponse
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -31,6 +32,7 @@ def put_anketa(request):
     a.surname = request.data["surname"]
     a.who = request.data["who"]
     a.whyme = request.data["whyme"]
+    a.create_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     ret = a.save()
     return JsonResponse(ret, status=status.HTTP_200_OK, safe=False)
 
@@ -58,5 +60,6 @@ def put_company(request):
     a.task3 = request.data["task3"]
     a.task4 = request.data["task4"]
     a.task5 = request.data["task5"]
+    a.create_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     ret = a.save()
     return JsonResponse(ret, status=status.HTTP_200_OK, safe=False)

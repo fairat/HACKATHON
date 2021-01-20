@@ -150,7 +150,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^.*$'
 
 CORS_ORIGIN_WHITELIST = (
-   'gpdd.ddns.net[:8400]', 'gpdd.ddns.net[:8400]', 'localhost[:8400]'
+   'http://gpdd.ddns.net[:8400]', 'http://gpdd.ddns.net[:8400]', 'http://localhost[:8400]'
 )
 
 # Keep ModelBackend around for per-user permissions and maybe a local
