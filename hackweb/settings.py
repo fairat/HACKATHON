@@ -25,7 +25,7 @@ SECRET_KEY = '%ya#g10d3x)0#(_hlavazf(r(u__(ylgthfl_p2eyuk2vcjzuk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['azs.ddns.net', '127.0.0.1', 'localhost', '192.168.1.35', '192.168.1.52', '89.189.129.237' ]
+ALLOWED_HOSTS = ['azs.ddns.net', '127.0.0.1', 'localhost', '192.168.1.35','89.189.129.237', '46.191.162.41',  ]
 
 
 # Application definition
@@ -150,7 +150,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r'^.*$'
 
 CORS_ORIGIN_WHITELIST = (
-   '46.191.162.41[:8500]', 'http://gpdd.ddns.net[:8500]', 'http://localhost[:8500]', 'http://46.191.162.41[:8500]'
+   'http://46.191.162.41[:8500]''http://gpdd.ddns.net[:8500]', 'http://localhost[:8500]', 'http://46.191.162.41[:8500]'
 )
 
 # Keep ModelBackend around for per-user permissions and maybe a local
